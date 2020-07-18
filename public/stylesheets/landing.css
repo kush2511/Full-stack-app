@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  }
+body{
+  background: black;
+}
+
+#landing-header h1 {
+  display: block;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 5em;
+  letter-spacing:2px;
+  text-shadow:-7px -3px 1px rgba(0,0,0, 0.5);
+  margin-bottom: 25px;
+  }
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+@media (max-width: 700px) {
+	#landing-header h1 {
+		margin: auto;
+		margin-bottom: 25px;
+		text-shadow:-5px -3px 1px rgba(0,0,0, 0.5);
+		font-size:2.5em;
+	}
+}
+.gradient-button {
+    margin: 10px;
+    font-size: 10px;
+	letter-spacing: 2px;
+	font-weight: 500;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    background-size: 200% auto;
+    color: #000;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+.gradient-button:hover{
+	text-decoration: none;
+    box-shadow: 0 25px 25px rgba(0,0,0,0.19), 0 15px 16px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+}
+.gradient-button-1 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
+.gradient-button-1:hover { background-position: right center; }
+
+.gradient-button-2 {background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%)}
+.gradient-button-2:hover { background-position: right center; }
+
+.gradient-button-3 {background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%)}
+.gradient-button-3:hover { background-position: right center; }
+
+.gradient-button-4 {background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)}
+.gradient-button-4:hover { background-position: right center; }
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://i.imgur.com/SiFzJOb.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  animation-delay: 5s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://i.imgur.com/pCY8r63.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://i.imgur.com/zmtRGI8.jpg);
+  animation-delay: 15s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(6) { 
+  background-image: url(http://i.imgur.com/K3mPv14.jpg);
+	  animation-delay: 25s; 
+}
+.slideshow li:nth-child(7) { 
+  background-image: url(https://i.imgur.com/pFxvZlN.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(8) { 
+  background-image: url(https://i.imgur.com/LBldpnz.jpg);
+  animation-delay: 35s; 
+}
+.slideshow li:nth-child(9) { 
+  background-image: url(https://i.imgur.com/SvyJ7jn.jpg);
+  animation-delay: 40s; 
+}
+.slideshow li:nth-child(10) { 
+  background-image: url(https://i.imgur.com/ejQeJo0.jpg);
+  animation-delay: 45s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
