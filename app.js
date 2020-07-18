@@ -16,7 +16,8 @@ var methodOverride = require("method-override");
 var flash = require("connect-flash");
 
 app.set("view engine","ejs");
-mongoose.connect("mongodb://localhost/yelp_camp_v4", {useNewUrlParser:true, useUnifiedTopology:true});
+//mongoose.connect("mongodb://localhost/yelp_camp_v4", {useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://campground:mehta%401234@cluster0.ungou.mongodb.net/camps?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology:true})
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 //console.log(__dirname);
